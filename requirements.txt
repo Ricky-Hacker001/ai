@@ -1,0 +1,13 @@
+# Core ML & Data Handling
+torch
+transformers
+accelerate
+numpy
+pandas
+
+# PDF Processing
+PyMuPDF
+
+# Vector Search & Embeddings
+sentence-transformers
+faiss-cpu

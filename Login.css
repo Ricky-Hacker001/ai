@@ -1,0 +1,122 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+}
+
+.login-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.input-field .icon {
+  margin-right: 10px;
+  color: #888;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.btn.primary {
+  background: #4e73df;
+  color: #fff;
+}
+
+.btn.google {
+  background: #db4437;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.signup {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup a {
+  color: #4e73df;
+  font-weight: bold;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin: 5px 0;
+  color: #4e73df;
+}
+ 
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
